@@ -981,6 +981,85 @@
     .empty-search svg { width: 36px; height: 36px; margin-bottom: 12px; color: var(--ink-subtle); }
 
     /* ============================================================
+       ABOUT SECTION
+    ============================================================ */
+    .about-section {
+      margin-top: 64px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+
+    .about-header {
+      margin-bottom: 22px;
+      max-width: 680px;
+    }
+
+    .about-tagline {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 8px;
+    }
+
+    .about-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .about-desc {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--ink-secondary);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .about-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    .about-card-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--ink);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .about-card-title svg {
+      color: var(--amber);
+      flex-shrink: 0;
+    }
+
+    .about-card-text {
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--ink-muted);
+    }
+
+    /* ============================================================
        FOOTER
     ============================================================ */
     .app-footer {
@@ -1507,6 +1586,49 @@
 
     <!-- Course Grid -->
     <section class="course-grid" id="course-grid" aria-label="Learning paths"></section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about-section" aria-label="About The Handbook">
+      <div class="about-header">
+        <div class="about-tagline">Architectural Overview</div>
+        <h2 class="about-title">About The AI &amp; Systems Handbook</h2>
+        <p class="about-desc">
+          An open-access reference curriculum designed for engineers, architects, founders, and product operators building production-grade intelligence platforms.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Systems-First Rigor
+          </div>
+          <p class="about-card-text">
+            Focused on production constraints: KV cache budgets, distributed inference, quantization kernels, context compression, and security mitigations over superficial demos.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Multi-Disciplinary Scope
+          </div>
+          <p class="about-card-text">
+            Connects low-level systems infrastructure with product discovery, probabilistic sprint planning, engineering management, and enterprise sales strategy.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            100% Offline &amp; Private
+          </div>
+          <p class="about-card-text">
+            Zero external runtimes, telemetry, or remote accounts. All chapter progression persists locally in your browser storage, keeping your reading private.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="app-footer">

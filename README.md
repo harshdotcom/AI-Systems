@@ -7,6 +7,19 @@
 
 ---
 
+## 📖 About The Handbook
+
+**The AI & Systems Handbook** is an open-access, reference-grade learning curriculum created for engineers, architects, founders, and product operators building production-grade intelligence platforms.
+
+Modern technical resources are frequently fragmented between toy tutorials and abstract academic theory. This handbook bridges that gap by consolidating **1,200 field-tested chapters across 8 core volumes** into a single, cohesive, offline-first manual.
+
+### Core Architecture:
+- **Systems-First Rigor**: Addresses real-world production trade-offs — KV cache budgets, distributed inference, quantization kernels, context compression, and jailbreak defenses.
+- **Multi-Disciplinary Scope**: Connects deep infrastructure (Distributed Systems, LLM Serving, Agent Scaffolding) with executive craft (Product Management, Engineering Leadership, and Enterprise GTM).
+- **100% Sovereign & Private**: Zero external runtimes, third-party analytics, or remote accounts. All chapter progression persists locally in your browser via `localStorage`.
+
+---
+
 ## 📚 Curriculum Overview
 
 | Volume | Track | Chapters | Focus Areas |
