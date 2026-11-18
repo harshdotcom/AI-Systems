@@ -1,9 +1,9 @@
 # The Central Library
 
-> **Sixteen books for people who build systems.**
-> 16 volumes · 2,800 chapters · free to read, nothing to sign up for.
+> **Seventeen books for people who build systems.**
+> 17 volumes · 3,000 chapters · free to read, nothing to sign up for.
 
-Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud and Python, and to the product, leadership and sales work that surrounds them.
+Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud, security and Python, and to the product, leadership and sales work that surrounds them.
 
 **Curated by [Harsh Jha](https://www.linkedin.com/in/harshjha-iiti/), AI Lead at Formee Holdings. Built by a team of IITians.**
 
@@ -37,15 +37,16 @@ So the chapters stay close to real constraints: KV cache budgets, consensus, que
 | 12 | **Backend & API Engineering** | Engineering | 200 | API design, authentication, data access, background jobs, testing, security, observability, deployment |
 | 13 | **Cloud & DevOps Engineering** | Engineering | 200 | Linux, cloud platforms, networking, infrastructure as code, CI/CD, Kubernetes, reliability, FinOps |
 | 14 | **Distributed Systems Engineering** | Engineering | 200 | Consensus, replication, data systems, fault tolerance, operations, case studies |
-| 15 | **Python Mastery** | Programming | 200 | Language fundamentals, tooling, data, testing, application design, production practices |
-| 16 | **Sales Mastery** | Business | 200 | Cold outreach, technical demos, executive negotiation, enterprise renewals |
+| 15 | **Cybersecurity & Application Security** | Engineering | 200 | Cryptography, identity and access, network and web application security, API security, secure development, testing, security operations |
+| 16 | **Python Mastery** | Programming | 200 | Language fundamentals, tooling, data, testing, application design, production practices |
+| 17 | **Sales Mastery** | Business | 200 | Cold outreach, technical demos, executive negotiation, enterprise renewals |
 
 ---
 
 ## What the site does
 
 - **The shelf.** Every volume sits spine-out on the first page, grouped by subject. Click a spine to open the book; a red ribbon marks the ones you have started.
-- **The catalogue.** A searchable index of all sixteen volumes, filterable by subject or by what you have in progress. Press `/` to search.
+- **The catalogue.** A searchable index of all seventeen volumes, filterable by subject or by what you have in progress. Press `/` to search.
 - **The reader.** Each book opens in a full-screen reader with a chapter stepper, a table of contents, a progress count and a shareable link to the chapter you are on. `←` and `→` move between chapters, `Esc` returns to the library.
 - **Focus dock.** A 25-minute focus timer and ambient sound, available on every page.
 - **Light and dark.** One switch, remembered between visits.

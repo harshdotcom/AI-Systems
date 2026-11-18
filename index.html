@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f3f2ee">
   <meta name="color-scheme" content="dark light">
-  <meta name="description" content="The Central Library — sixteen practical books on AI engineering, backends, cloud, distributed systems, databases, Python, product, leadership and sales. 2,800 chapters, free to read.">
+  <meta name="description" content="The Central Library — seventeen practical books on AI engineering, backends, cloud, security, distributed systems, databases, Python, product, leadership and sales. 3,000 chapters, free to read.">
   <meta name="author" content="Harsh Jha, AI Lead at Formee Holdings">
   <meta property="og:title" content="The Central Library">
-  <meta property="og:description" content="Sixteen books for people who build systems. 2,800 chapters, free to read. Curated by Harsh Jha, AI Lead at Formee Holdings, and built by a team of IITians.">
+  <meta property="og:description" content="Seventeen books for people who build systems. 3,000 chapters, free to read. Curated by Harsh Jha, AI Lead at Formee Holdings, and built by a team of IITians.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://harshdotcom.github.io/AI-Systems/">
-  <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-image.png">
+  <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-image.png?v=2">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Sixteen books for people who build systems, above a shelf of sixteen coloured book spines.">
+  <meta property="og:image:alt" content="Seventeen books for people who build systems, above a shelf of seventeen coloured book spines.">
   <meta name="twitter:card" content="summary_large_image">
   <title>The Central Library</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
@@ -1099,7 +1099,7 @@
         <a class="header-link" href="#library">Catalogue</a>
         <a class="header-link" href="#preface">About</a>
         <a class="header-link" href="#curator">Curator</a>
-        <span class="header-count" id="global-stat-text" title="Your reading, stored only in this browser">0 of 16 opened</span>
+        <span class="header-count" id="global-stat-text" title="Your reading, stored only in this browser">0 of 17 opened</span>
         <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark" title="Light / dark">
           <!-- Sun: shown in the dark theme -->
           <svg id="theme-sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none" aria-hidden="true">
@@ -1122,12 +1122,12 @@
 
     <!-- Opening -->
     <section class="hero" aria-labelledby="hero-title">
-      <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Sixteen</span> books for people who <em>build systems.</em></h1>
+      <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Seventeen</span> books for people who <em>build systems.</em></h1>
 
       <div class="hero-body rise d1">
         <div>
           <p class="hero-lede">
-            Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud and Python, and to the product, leadership and sales work that surrounds them.
+            Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud, security and Python, and to the product, leadership and sales work that surrounds them.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#library">
@@ -1139,8 +1139,8 @@
         </div>
 
         <dl class="ledger" aria-label="The collection in numbers">
-          <div><dt>Volumes</dt><dd id="stat-volumes">16</dd></div>
-          <div><dt>Chapters</dt><dd id="stat-chapters">2,800</dd></div>
+          <div><dt>Volumes</dt><dd id="stat-volumes">17</dd></div>
+          <div><dt>Chapters</dt><dd id="stat-chapters">3,000</dd></div>
           <div><dt>Subjects</dt><dd id="stat-subjects">4</dd></div>
           <div><dt>Read by you</dt><dd id="stat-read">0</dd></div>
         </dl>
@@ -1505,6 +1505,16 @@
         icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="6" height="5" rx="1"/><rect x="15" y="4" width="6" height="5" rx="1"/><rect x="9" y="16" width="6" height="5" rx="1"/><path d="M9 6.5h6M6 9v3.5h6M18 9v3.5h-6M12 13v3"/></svg>',
         tone: '#505660', toneBg: 'rgba(174,181,191,.10)', toneBorder: 'rgba(190,198,208,.28)',
         description: 'Master distributed systems through practical study of consensus, replication, data systems, fault tolerance, operations, and real-world case studies.'
+      },
+      {
+        id: 'cybersecurity-application-security', slug: 'cybersecurity-application-security',
+        title: 'Cybersecurity & Application Security', subtitle: 'Defensive security from fundamentals to secure software and operations',
+        category: 'Engineering', chapters: 200, parts: 20,
+        key: 'cyber-appsec-progress-v1', lastKey: 'cyber-appsec-last-v1',
+        file: 'Cybersecurity & Application Security.html',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>',
+        tone: '#5d6b52', toneBg: 'rgba(150,170,130,.12)', toneBorder: 'rgba(150,170,130,.30)',
+        description: 'Learn defensive security end to end: cryptography, identity and access, network and web application security, API security, secure development, testing, and security operations.'
       },
       {
         id: 'python-mastery', slug: 'python-mastery-200-chapters-html', title: 'Python Mastery',
@@ -2099,13 +2109,15 @@
       'backend-api-engineering':         ['#2c5a5e', '#ece6d2'],
       'cloud-devops-engineering':        ['#9db7c6', '#17222a'],
       'distributed-systems-engineering': ['#d4553d', '#fbeee0'],
+      'cybersecurity-application-security': ['#b9c7a8', '#1c2416'],
       'python-mastery':                  ['#e4c75f', '#1f1c10'],
       'sales-mastery':                   ['#2a2f3a', '#e6dcc6']
     };
     const SPINE_TITLE = {
       'Distributed Systems Engineering': 'Distributed Systems',
       'Backend & API Engineering': 'Backend & APIs',
-      'Cloud & DevOps Engineering': 'Cloud & DevOps'
+      'Cloud & DevOps Engineering': 'Cloud & DevOps',
+      'Cybersecurity & Application Security': 'Cybersecurity'
     };
     const SPINE_HEIGHTS = [100, 91, 96, 87, 94, 99, 89, 95, 86, 93, 98, 90, 96, 88, 94, 92];
     const NUMBER_WORDS = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve',
