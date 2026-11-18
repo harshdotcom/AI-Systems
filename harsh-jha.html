@@ -6,16 +6,34 @@
   <meta name="theme-color" content="#f3f2ee">
   <meta name="color-scheme" content="dark light">
   <meta name="author" content="Harsh Jha">
-  <meta name="description" content="Harsh Jha leads AI engineering at Formee Holdings in Bengaluru. Experience, projects and tools: generative AI, RAG and agentic systems built on Go, Python and distributed systems.">
-  <meta property="og:title" content="Harsh Jha — AI Lead, Formee Holdings">
-  <meta property="og:description" content="AI engineering lead with a backend foundation. Experience, projects and tools.">
+  <meta name="description" content="Harsh Jha is AI Lead at Formee Holdings in Bengaluru. Experience, projects, reading and tools across generative AI, RAG, agentic systems and backend engineering.">
+  <link rel="canonical" href="https://harshdotcom.github.io/AI-Systems/harsh-jha.html">
   <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Harsh Jha">
+  <meta property="og:title" content="Harsh Jha · AI Lead at Formee Holdings">
+  <meta property="og:description" content="AI engineer in Bengaluru working on generative AI, RAG and agentic systems. Experience, projects and reading.">
   <meta property="og:url" content="https://harshdotcom.github.io/AI-Systems/harsh-jha.html">
   <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-harsh-jha.png?v=2">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Harsh Jha, AI engineer. AI Lead at Formee Holdings, Bengaluru.">
+  <meta property="profile:first_name" content="Harsh">
+  <meta property="profile:last_name" content="Jha">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Harsh Jha — AI Lead, Formee Holdings</title>
+  <meta name="twitter:title" content="Harsh Jha · AI Lead at Formee Holdings">
+  <meta name="twitter:description" content="AI engineer in Bengaluru working on generative AI, RAG and agentic systems. Experience, projects and reading.">
+  <meta name="twitter:image" content="https://harshdotcom.github.io/AI-Systems/og-harsh-jha.png?v=2">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Harsh Jha","jobTitle":"AI Lead",
+   "worksFor":{"@type":"Organization","name":"Formee Holdings"},
+   "alumniOf":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Indore"},
+   "address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},
+   "url":"https://harshdotcom.github.io/AI-Systems/harsh-jha.html",
+   "image":"https://harshdotcom.github.io/AI-Systems/harsh-jha.jpg",
+   "sameAs":["https://www.linkedin.com/in/harshjha-iiti/","https://github.com/harshdotcom"]}
+  </script>
+  <title>Harsh Jha · AI Lead at Formee Holdings</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
@@ -264,6 +282,7 @@
       .row-go, .row-note { grid-column: 3; grid-row: 1; }
     }
     @media (max-width: 860px) {
+      .header-link:not(.keep) { display: none; }
       .hero { grid-template-columns: minmax(0, 1fr); row-gap: 40px; }
       .hero-side { justify-self: start; max-width: 440px; }
       .portrait { max-width: 300px; }
@@ -273,7 +292,6 @@
     }
     @media (max-width: 640px) {
       .header-inner { height: 56px; }
-      .header-link:not(.keep) { display: none; }
       .row { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; padding: 18px 0 19px; }
       .row-mark { grid-column: 1 / -1; margin-bottom: 8px; }
       .row-main { grid-column: 1; }
@@ -306,6 +324,7 @@
       <nav class="header-nav" aria-label="Sections">
         <a class="header-link" href="#experience">Experience</a>
         <a class="header-link" href="#projects">Projects</a>
+        <a class="header-link" href="#reading">Reading</a>
         <a class="header-link" href="#toolkit">Toolkit</a>
         <a class="header-link" href="#contact">Contact</a>
         <a class="header-link keep" href="index.html">The Central Library</a>
@@ -523,6 +542,81 @@
               <span class="row-desc">An image upload and storage service. The Go backend validates and stores files behind JWT authentication, in a layered router, service and repository design; an Angular interface sits on top.</span>
               <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
             </a>
+          </li>
+        </ol>
+      </div>
+      <div class="section-end"></div>
+    </section>
+
+    <!-- Reading -->
+    <section class="section" id="reading" aria-labelledby="reading-title">
+      <h2 class="section-title" id="reading-title">Reading</h2>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Papers</h3>
+          <p>What each one found, in plain words</p>
+        </header>
+        <ol class="rows">
+          <li>
+            <a class="row" href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">
+              <span class="row-mark">2017</span>
+              <span class="row-main">
+                <span class="row-title">Attention Is All You Need</span>
+                <span class="row-sub">Vaswani and others, Google</span>
+              </span>
+              <span class="row-desc">A model can drop recurrence and convolution and rely on attention alone. Because it reads every word of a sentence at once instead of one after another, it trains much faster, and it translated better than the best systems of its time. This is the Transformer, the design behind today&rsquo;s language models.</span>
+              <span class="row-go"><span>arXiv</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener">
+              <span class="row-mark">2020</span>
+              <span class="row-main">
+                <span class="row-title">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</span>
+                <span class="row-sub">Lewis and others, Facebook AI Research</span>
+              </span>
+              <span class="row-desc">A language model answers more accurately when it first looks things up. Pairing a generator with a retriever over an index of documents gave answers that were more specific and more factual than the model&rsquo;s memory alone, and the knowledge can be updated by replacing the index instead of retraining.</span>
+              <span class="row-go"><span>arXiv</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noopener">
+              <span class="row-mark">2021</span>
+              <span class="row-main">
+                <span class="row-title">LoRA: Low-Rank Adaptation of Large Language Models</span>
+                <span class="row-sub">Hu and others, Microsoft</span>
+              </span>
+              <span class="row-desc">You do not have to retrain a whole model to specialise it. Freezing the original weights and training two small matrices beside them cut the trainable parameters by up to 10,000 times and GPU memory by about three times on GPT-3, matched full fine-tuning in quality, and added no delay at inference.</span>
+              <span class="row-go"><span>arXiv</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Books</h3>
+          <p>One finished, one in progress</p>
+        </header>
+        <ol class="rows">
+          <li class="row">
+            <span class="row-mark">Finished</span>
+            <span class="row-main">
+              <span class="row-title">Hands-On Large Language Models</span>
+              <span class="row-sub">Jay Alammar and Maarten Grootendorst. O&rsquo;Reilly, 2024</span>
+            </span>
+            <div class="row-desc"><p>An illustrated, code-first tour of how language models work and how to use them: tokens and embeddings, the inside of a Transformer, classification and clustering, prompt engineering, semantic search and RAG, and fine-tuning.</p></div>
+            <span class="row-note"></span>
+          </li>
+          <li class="row">
+            <span class="row-mark">Reading now</span>
+            <span class="row-main">
+              <span class="row-title">AI Engineering</span>
+              <span class="row-sub">Chip Huyen. O&rsquo;Reilly, 2025</span>
+            </span>
+            <div class="row-desc"><p>How to build applications on top of foundation models: evaluation, prompt engineering, RAG and agents, fine-tuning, dataset engineering and inference optimisation. I have given myself three months to finish it.</p></div>
+            <span class="row-note">By Feb 2027</span>
           </li>
         </ol>
       </div>
