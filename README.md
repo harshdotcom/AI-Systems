@@ -5,7 +5,7 @@
 
 Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud and Python, and to the product, leadership and sales work that surrounds them.
 
-**Curated by Harsh Jha, AI Lead at Formee Holdings. Built by a team of IITians.**
+**Curated by [Harsh Jha](https://www.linkedin.com/in/harshjha-iiti/), AI Lead at Formee Holdings. Built by a team of IITians.**
 
 **Live site:** [https://harshdotcom.github.io/AI-Systems/](https://harshdotcom.github.io/AI-Systems/)
 
@@ -94,5 +94,18 @@ The repository is ready for GitHub Pages:
 
 ## Credits
 
-Curated by **Harsh Jha**, AI Lead at Formee Holdings.
+Curated by **[Harsh Jha](https://www.linkedin.com/in/harshjha-iiti/)**, AI Lead at Formee Holdings.
 Built by a team of IITians.
+
+### About the curator
+
+I'm [Harsh Jha](https://www.linkedin.com/in/harshjha-iiti/). I lead AI engineering at Formee Holdings in Bengaluru, where we build generative AI, RAG and agentic systems that have to hold up in production.
+
+I came to AI from backend engineering. At SimplyPhi I shipped more than twenty production features and fifty REST APIs in Go and Python, on Azure and Oracle Cloud, and led a team of developers. Before that I studied at IIT Indore. I curate this library with a team of fellow IITians.
+
+| | |
+| :--- | :--- |
+| 2026 – | **Formee Holdings**, AI Lead. Bengaluru. |
+| 2024 – 26 | **SimplyPhi**, Software Engineer, then Senior and Full Stack Engineer. Indore. |
+| 2023 – 24 | **Prodigal AI**, Associate Software Engineer. Singapore. |
+| 2020 – 24 | **IIT Indore**, Bachelor of Technology. |

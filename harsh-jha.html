@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f2ee">
+  <meta name="color-scheme" content="dark light">
+  <meta name="author" content="Harsh Jha">
+  <meta name="description" content="Harsh Jha leads AI engineering at Formee Holdings in Bengaluru. Experience, projects and tools: generative AI, RAG and agentic systems built on Go, Python and distributed systems.">
+  <meta property="og:title" content="Harsh Jha — AI Lead, Formee Holdings">
+  <meta property="og:description" content="AI engineering lead with a backend foundation. Experience, projects and tools.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://harshdotcom.github.io/AI-Systems/harsh-jha.html">
+  <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-harsh-jha.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Harsh Jha — AI Lead, Formee Holdings</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,401&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+  <script>
+    /* Shares the light / dark choice with The Central Library. Runs early to avoid a flash. */
+    (function () {
+      var theme = 'light';
+      try { theme = localStorage.getItem('central-library-theme-v2') || 'light'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <style>
+    /* ================================================================
+       HARSH JHA — profile page
+       Same paper, ink and type as The Central Library, in one
+       self-contained file so it can be lifted into another site.
+       To edit the content, change the HTML below; nothing is generated.
+    ================================================================ */
+
+    :root {
+      --font-display: "Zodiak", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --font-sans:    "Switzer", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+      --bg: #f3f2ee; --bg-hover: #eae8e2;
+      --ink: #16150f; --ink-muted: #55534a; --ink-subtle: #6f6c63; --ink-faint: #bbb8ae;
+      --rule: rgba(22,21,15,.14); --rule-strong: rgba(22,21,15,.34);
+      --accent: #9a2b14;
+
+      --ease-out: cubic-bezier(.16, 1, .3, 1);
+      --page-max: 1328px;
+      --gutter: clamp(20px, 3.4vw, 44px);
+    }
+    [data-theme="light"] { color-scheme: light; }
+    [data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #121210; --bg-hover: #2b2b27;
+      --ink: #eceae2; --ink-muted: #b5b2a7; --ink-subtle: #918e84; --ink-faint: #4b4a44;
+      --rule: rgba(236,234,226,.15); --rule-strong: rgba(236,234,226,.36);
+      --accent: #ff9c7c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; scroll-padding-top: 84px; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      overflow-x: clip;
+      transition: background-color .3s ease, color .3s ease;
+    }
+    button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--ink); color: var(--bg); }
+    :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+
+    /* Masthead */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .header-inner {
+      max-width: var(--page-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      height: 60px;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .brand { font-family: var(--font-display); font-size: 20px; letter-spacing: -.012em; white-space: nowrap; }
+    .header-nav { display: flex; align-items: center; gap: clamp(16px, 2.4vw, 30px); font-size: 14.5px; }
+    .header-link { color: var(--ink-muted); transition: color .15s ease; white-space: nowrap; }
+    .header-link:hover { color: var(--ink); }
+    .theme-btn {
+      width: 34px; height: 34px; margin-right: -8px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      color: var(--ink-muted);
+      transition: background-color .15s ease, color .15s ease;
+    }
+    .theme-btn:hover { background: var(--bg-hover); color: var(--ink); }
+    .theme-btn svg { width: 17px; height: 17px; }
+    [data-theme="dark"] .icon-moon, [data-theme="light"] .icon-sun, :root:not([data-theme]) .icon-sun { display: none; }
+
+    main { max-width: var(--page-max); margin: 0 auto; padding: 0 var(--gutter) 72px; }
+
+    /* Opening */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+      column-gap: clamp(32px, 6vw, 96px);
+      align-items: end;
+      padding: clamp(40px, 6.6vw, 96px) 0 0;
+    }
+    .hero-side { max-width: 340px; width: 100%; justify-self: end; }
+    .portrait { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; margin-bottom: 22px; background: var(--bg-hover); }
+    .hero-title {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2.7rem, 7.5vw, 6.9rem);
+      line-height: .97;
+      letter-spacing: -.03em;
+      max-width: 15ch;
+      text-wrap: balance;
+    }
+    .hero-title em { font-style: italic; letter-spacing: -.035em; }
+    .hero-lede {
+      margin-top: clamp(28px, 4.6vw, 60px);
+      max-width: 33em;
+      font-size: clamp(1.06rem, 1.4vw, 1.28rem);
+      line-height: 1.5;
+      color: var(--ink-muted);
+      text-wrap: pretty;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; margin-top: 28px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      height: 46px;
+      padding: 0 20px 0 22px;
+      border-radius: 3px;
+      background: var(--ink); color: var(--bg);
+      font-size: 15px; font-weight: 500;
+      white-space: nowrap;
+    }
+    .btn-text {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 4px 0;
+      font-size: 15px; font-weight: 500;
+      border-bottom: 1px solid currentColor;
+      white-space: nowrap;
+    }
+    .btn svg, .btn-text svg { width: 15px; height: 15px; flex: none; transition: transform .25s var(--ease-out); }
+    .btn:hover svg, .btn-text:hover svg { transform: translate(2px, -2px); }
+
+    .ledger { font-size: 14.5px; }
+    .ledger > div { display: flex; align-items: baseline; gap: 10px; padding: 5px 0; }
+    .ledger dt { flex: 1; display: flex; align-items: baseline; gap: 10px; color: var(--ink-muted); white-space: nowrap; }
+    .ledger dt::after { content: ""; flex: 1; min-width: 16px; border-bottom: 1px dotted var(--ink-faint); transform: translateY(-4px); }
+    .ledger dd { font-weight: 500; text-align: right; }
+
+    /* Sections */
+    .section { margin-top: clamp(72px, 10vw, 148px); }
+    .section-title {
+      padding-bottom: 24px;
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 4.2vw, 3.4rem);
+      line-height: 1.04;
+      letter-spacing: -.024em;
+    }
+    .group {
+      display: grid;
+      grid-template-columns: minmax(150px, 2fr) minmax(0, 10fr);
+      column-gap: var(--gutter);
+      border-top: 1px solid var(--ink);
+    }
+    .group-head { position: sticky; top: 60px; align-self: start; padding: 26px 0 24px; }
+    .group-head h3 { font-size: 15px; font-weight: 600; line-height: 1.3; }
+    .group-head p { margin-top: 2px; font-size: 13.5px; color: var(--ink-subtle); }
+    .rows { list-style: none; }
+    .rows > li + li { border-top: 1px solid var(--rule); }
+    .section-end { border-top: 1px solid var(--ink); }
+
+    /* A row: marker · title · description · trailing note */
+    .row {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr) minmax(0, 1.25fr) 96px;
+      column-gap: 26px;
+      align-items: baseline;
+      padding: 22px 0 23px;
+    }
+    .row-mark { font-size: 13px; color: var(--ink-subtle); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .row-mark.has-chip::before {
+      content: "";
+      display: inline-block;
+      width: 7px; height: 16px;
+      margin-right: 11px;
+      background: var(--cloth, var(--ink));
+      transform: translateY(3px);
+    }
+    .row-title {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.05vw, 1.82rem);
+      line-height: 1.12;
+      letter-spacing: -.016em;
+      transition: transform .35s var(--ease-out);
+    }
+    .row-sub { display: block; margin-top: 7px; font-size: 14.5px; line-height: 1.45; color: var(--ink-muted); }
+    .row-desc { font-size: 14.5px; line-height: 1.55; color: var(--ink-muted); text-wrap: pretty; }
+    .row-desc p + p { margin-top: 8px; }
+    .row-go {
+      display: inline-flex; align-items: center; justify-content: flex-end; gap: 7px;
+      font-size: 13.5px; font-weight: 500;
+      color: var(--ink-subtle);
+      white-space: nowrap;
+      transition: color .15s ease;
+    }
+    .row-go svg { width: 15px; height: 15px; transition: transform .35s var(--ease-out); }
+    a.row:hover .row-title, a.row:focus-visible .row-title { transform: translateX(7px); }
+    a.row:hover .row-go, a.row:focus-visible .row-go { color: var(--ink); }
+    a.row:hover .row-go svg, a.row:focus-visible .row-go svg { transform: translate(2px, -2px); }
+    .row-note { font-size: 13px; color: var(--ink-subtle); text-align: right; }
+
+    /* Toolkit and contact — plain definition lists */
+    .facts > div { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 26px; padding: 18px 0; font-size: 15.5px; }
+    .facts > div + div { border-top: 1px solid var(--rule); }
+    .facts dt { font-weight: 500; }
+    .facts dd { color: var(--ink-muted); max-width: 46em; }
+    .facts a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; transition: color .15s ease; }
+    .facts a:hover { color: var(--accent); }
+
+    .site-footer {
+      display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+      gap: 10px 32px;
+      margin-top: clamp(72px, 9vw, 128px);
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      font-size: 13.5px;
+      color: var(--ink-subtle);
+    }
+    .site-footer a { color: var(--ink-muted); border-bottom: 1px solid var(--rule-strong); }
+    .site-footer a:hover { color: var(--ink); border-bottom-color: currentColor; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+
+    .rise { animation: rise .9s var(--ease-out) both; }
+    .rise.d1 { animation-delay: .07s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+
+    @media (min-width: 1241px) {
+      :root { --gutter: 84px; --page-max: 1408px; }
+    }
+    @media (max-width: 1080px) {
+      .row { grid-template-columns: 96px minmax(0, 1fr) 96px; }
+      .row-desc { grid-column: 2; margin-top: 12px; }
+      .row-go, .row-note { grid-column: 3; grid-row: 1; }
+    }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: minmax(0, 1fr); row-gap: 40px; }
+      .hero-side { justify-self: start; max-width: 440px; }
+      .portrait { max-width: 300px; }
+      .group { grid-template-columns: minmax(0, 1fr); }
+      .group-head { position: static; display: flex; align-items: baseline; gap: 12px; padding: 20px 0 4px; }
+      .group-head p { margin-top: 0; }
+    }
+    @media (max-width: 640px) {
+      .header-inner { height: 56px; }
+      .header-link:not(.keep) { display: none; }
+      .row { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; padding: 18px 0 19px; }
+      .row-mark { grid-column: 1 / -1; margin-bottom: 8px; }
+      .row-main { grid-column: 1; }
+      .row-desc { grid-column: 1 / -1; }
+      .row-go, .row-note { grid-column: 2; grid-row: 2; }
+      .row-go span { display: none; }
+      .row-note { display: none; }
+      .facts > div { grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 16px 0; }
+    }
+    @media (max-width: 420px) {
+      .hero-actions .btn { width: 100%; justify-content: space-between; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+    @media print {
+      .site-header, .hero-actions, .row-go { display: none; }
+      .hero { grid-template-columns: 2fr 1fr; }
+      .section { margin-top: 40px; }
+      .group-head { position: static; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Harsh Jha</a>
+      <nav class="header-nav" aria-label="Sections">
+        <a class="header-link" href="#experience">Experience</a>
+        <a class="header-link" href="#projects">Projects</a>
+        <a class="header-link" href="#toolkit">Toolkit</a>
+        <a class="header-link" href="#contact">Contact</a>
+        <a class="header-link keep" href="index.html">The Central Library</a>
+        <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark" title="Light / dark">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2"/>
+            <path d="M12 2.5v2M12 19.5v2M4.2 4.2l1.5 1.5M18.3 18.3l1.5 1.5M2.5 12h2M19.5 12h2M4.2 19.8l1.5-1.5M18.3 5.7l1.5-1.5"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Opening -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <h1 class="hero-title rise" id="hero-title">Harsh Jha<br><em>AI engineer.</em></h1>
+        <div class="rise d1">
+          <p class="hero-lede">
+            I lead AI engineering at Formee Holdings in Bengaluru, working on generative AI, RAG and agentic systems. Before AI I was a backend engineer, writing Go and Python for production.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="https://www.linkedin.com/in/harshjha-iiti/" target="_blank" rel="noopener me">
+              LinkedIn
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="btn-text" href="https://github.com/harshdotcom" target="_blank" rel="noopener me">
+              GitHub
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+            <a class="btn-text" href="mailto:harshj92002@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-side rise d1">
+        <img class="portrait" src="harsh-jha.jpg?v=2" width="500" height="625" alt="Harsh Jha, smiling, in a navy ski jacket on a snowy slope">
+        <dl class="ledger" aria-label="At a glance">
+          <div><dt>Role</dt><dd>AI Lead</dd></div>
+          <div><dt>Company</dt><dd>Formee Holdings</dd></div>
+          <div><dt>Based in</dt><dd>Bengaluru</dd></div>
+          <div><dt>Studied at</dt><dd>IIT Indore</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <h2 class="section-title" id="experience-title">Experience</h2>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Work</h3>
+          <p>2023 to now</p>
+        </header>
+        <ol class="rows">
+          <li class="row">
+            <span class="row-mark">2026 &ndash;</span>
+            <span class="row-main">
+              <span class="row-title">Formee Holdings</span>
+              <span class="row-sub">AI Lead</span>
+            </span>
+            <div class="row-desc">
+              <p>I lead the AI engineering team and set the architecture and standards for AI systems that go to production.</p>
+              <p>The work covers generative AI, LLM, RAG and agentic solutions, and bringing AI into existing products.</p>
+            </div>
+            <span class="row-note">Bengaluru</span>
+          </li>
+          <li class="row">
+            <span class="row-mark">2024 &ndash; 26</span>
+            <span class="row-main">
+              <span class="row-title">SimplyPhi</span>
+              <span class="row-sub">Software Engineer, then Senior Software Engineer, then Full Stack Engineer</span>
+            </span>
+            <div class="row-desc">
+              <p>Delivered more than 20 production features and 50 REST APIs, plus enterprise integrations, in Go, Python, Angular and TypeScript on Azure and Oracle Cloud.</p>
+              <p>Led a team of more than five developers: delivery timelines, code review, and bringing AI-assisted workflows into how the team builds.</p>
+              <p>Earlier work included Highcharts dashboards and more than 15 interactive Mapbox maps for browsing housing.</p>
+            </div>
+            <span class="row-note">Indore</span>
+          </li>
+          <li class="row">
+            <span class="row-mark">2023 &ndash; 24</span>
+            <span class="row-main">
+              <span class="row-title">Prodigal AI</span>
+              <span class="row-sub">Associate Software Engineer</span>
+            </span>
+            <div class="row-desc">
+              <p>Worked on the React front end of the company&rsquo;s web application, across a MongoDB, Express, React and Node.js stack.</p>
+            </div>
+            <span class="row-note">Singapore</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Education</h3>
+          <p>2020 to 2024</p>
+        </header>
+        <ol class="rows">
+          <li class="row">
+            <span class="row-mark">2020 &ndash; 24</span>
+            <span class="row-main">
+              <span class="row-title">IIT Indore</span>
+              <span class="row-sub">Bachelor of Technology</span>
+            </span>
+            <div class="row-desc">
+              <p>General Secretary for Hostel Affairs in the Students&rsquo; Gymkhana, 2022 to 2023: hostel operations, budget and events, and the link between students and the administration.</p>
+            </div>
+            <span class="row-note">Indore</span>
+          </li>
+        </ol>
+      </div>
+      <div class="section-end"></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section-title" id="projects-title">Projects</h2>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>AI</h3>
+          <p>4 projects</p>
+        </header>
+        <ol class="rows">
+          <li>
+            <a class="row" href="index.html" style="--cloth:#6f1f2c">
+              <span class="row-mark has-chip">01</span>
+              <span class="row-main">
+                <span class="row-title">The Central Library</span>
+                <span class="row-sub">HTML, CSS, JavaScript</span>
+              </span>
+              <span class="row-desc">Sixteen books and 2,800 chapters on AI engineering, backends, databases, distributed systems and the work around them. Free to read, with a built-in reader, progress kept in the browser and no account.</span>
+              <span class="row-go"><span>Open</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://github.com/harshdotcom/LetAITalk" target="_blank" rel="noopener" style="--cloth:#1f4a3a">
+              <span class="row-mark has-chip">02</span>
+              <span class="row-main">
+                <span class="row-title">LetAITalk</span>
+                <span class="row-sub">Go, WebSockets, speech recognition, text-to-speech, OpenAI</span>
+              </span>
+              <span class="row-desc">An AI voice assistant that answers phone calls on your behalf. It works out why the caller is calling, replies within clear safety limits, filters spam, and sends you a summary with the next step.</span>
+              <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://github.com/harshdotcom/local-rag-engine" target="_blank" rel="noopener" style="--cloth:#27386b">
+              <span class="row-mark has-chip">03</span>
+              <span class="row-main">
+                <span class="row-title">Local RAG Engine</span>
+                <span class="row-sub">Python, FastAPI, LangChain, ChromaDB, Ollama</span>
+              </span>
+              <span class="row-desc">A retrieval-augmented generation API that runs entirely on your own machine. Upload PDFs or text, ask questions, and get answers drawn from your documents with the source files cited. No external API key.</span>
+              <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://harshdotcom.github.io/ai-periodic-table/" target="_blank" rel="noopener" style="--cloth:#d8a23a">
+              <span class="row-mark has-chip">04</span>
+              <span class="row-main">
+                <span class="row-title">AI Periodic Table</span>
+                <span class="row-sub">Angular, TypeScript</span>
+              </span>
+              <span class="row-desc">The building blocks of AI systems laid out as a periodic table, grouped by what they do, with recipes that combine them into common patterns such as enterprise Q&amp;A with RAG or a ReAct agent.</span>
+              <span class="row-go"><span>Live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Tools and backends</h3>
+          <p>3 projects</p>
+        </header>
+        <ol class="rows">
+          <li>
+            <a class="row" href="https://github.com/harshdotcom/PiAndPixel" target="_blank" rel="noopener" style="--cloth:#4b2e58">
+              <span class="row-mark has-chip">05</span>
+              <span class="row-main">
+                <span class="row-title">Pi &amp; Pixel</span>
+                <span class="row-sub">TypeScript, Python, Manim</span>
+              </span>
+              <span class="row-desc">A code-first studio for animated explainer videos. Scenes are plain Manim, controlled from the browser and rendered on your own machine or Google Colab, then exported in several formats from one project. In development.</span>
+              <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://github.com/harshdotcom/Applyfox" target="_blank" rel="noopener" style="--cloth:#b8472a">
+              <span class="row-mark has-chip">06</span>
+              <span class="row-main">
+                <span class="row-title">Applyfox</span>
+                <span class="row-sub">Python</span>
+              </span>
+              <span class="row-desc">Finds company job boards on Greenhouse, Lever, Workday and Ashby, checks each one against the official careers API, counts the open roles, and exports the result as a structured dataset.</span>
+              <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+          <li>
+            <a class="row" href="https://github.com/harshdotcom/mypic" target="_blank" rel="noopener" style="--cloth:#2c5a5e">
+              <span class="row-mark has-chip">07</span>
+              <span class="row-main">
+                <span class="row-title">MyPic</span>
+                <span class="row-sub">Go, Gin, GORM, MySQL, JWT, Angular</span>
+              </span>
+              <span class="row-desc">An image upload and storage service. The Go backend validates and stores files behind JWT authentication, in a layered router, service and repository design; an Angular interface sits on top.</span>
+              <span class="row-go"><span>GitHub</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+      <div class="section-end"></div>
+    </section>
+
+    <!-- Toolkit -->
+    <section class="section" id="toolkit" aria-labelledby="toolkit-title">
+      <h2 class="section-title" id="toolkit-title">Toolkit</h2>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>What I work with</h3>
+        </header>
+        <dl class="facts">
+          <div><dt>Languages</dt><dd>Go, Python, TypeScript</dd></div>
+          <div><dt>AI</dt><dd>LLMs, retrieval-augmented generation, agentic systems, LangChain, LangGraph, vector databases, FastAPI model serving, MLOps</dd></div>
+          <div><dt>Backend</dt><dd>REST APIs, Gin, distributed systems, MySQL, MongoDB</dd></div>
+          <div><dt>Cloud and delivery</dt><dd>Azure, Oracle Cloud Infrastructure, CI/CD</dd></div>
+          <div><dt>Front end</dt><dd>Angular, React</dd></div>
+        </dl>
+      </div>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Certifications</h3>
+        </header>
+        <dl class="facts">
+          <div><dt>Oracle</dt><dd>Oracle Cloud Infrastructure 2025 Certified</dd></div>
+          <div><dt>LangChain</dt><dd>Introduction to LangChain (Python); LangGraph (Python)</dd></div>
+          <div><dt>Agents</dt><dd>Introduction to agent skills</dd></div>
+        </dl>
+      </div>
+      <div class="section-end"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+
+      <div class="group">
+        <header class="group-head">
+          <h3>Where to find me</h3>
+        </header>
+        <dl class="facts">
+          <div><dt>Email</dt><dd><a href="mailto:harshj92002@gmail.com">harshj92002@gmail.com</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/harshjha-iiti/" target="_blank" rel="noopener me">linkedin.com/in/harshjha-iiti</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/harshdotcom" target="_blank" rel="noopener me">github.com/harshdotcom</a></dd></div>
+          <div><dt>Library</dt><dd><a href="index.html">The Central Library</a>, sixteen books for people who build systems</dd></div>
+        </dl>
+      </div>
+      <div class="section-end"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Harsh Jha. AI Lead at Formee Holdings, Bengaluru.</p>
+      <div class="footer-links">
+        <a href="index.html">The Central Library</a>
+        <a href="https://www.linkedin.com/in/harshjha-iiti/" target="_blank" rel="noopener me">LinkedIn</a>
+        <a href="mailto:harshj92002@gmail.com">Email</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', next === 'dark' ? '#121210' : '#f3f2ee');
+      try { localStorage.setItem('central-library-theme-v2', next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>

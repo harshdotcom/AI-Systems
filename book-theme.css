@@ -1,0 +1,84 @@
+/* ================================================================
+   THE CENTRAL LIBRARY — book theme
+   ----------------------------------------------------------------
+   One stylesheet shared by every book, loaded after the book's own
+   styles. It restates the colour tokens and type so the books match
+   the first page: paper, ink, Zodiak for titles, Switzer for text.
+
+   Each book sets two colours of its own, taken from its spine:
+     --book       accent on paper (light theme)
+     --book-dark  accent on the dark theme
+   A book that does not link this file keeps its original look.
+================================================================ */
+
+:root {
+  --bg: #f3f2ee; --surface: #faf9f6; --surface-2: #eceae4; --ink: #16150f; --muted: #5f5c53; --line: #d9d6cc;
+  --accent: var(--book, #9a2b14); --accent-soft: color-mix(in srgb, var(--accent) 13%, var(--bg)); --accent-ink: #ffffff;
+  --amber: #7d5a0c; --tldr-bg: #efe8d3; --tldr-line: #b98a1e;
+  --indigo: #1f5a4f; --real-bg: #e2eae4; --real-line: #2f7566;
+  --code-bg: #1b1a16; --code-ink: #e9e6dc; --inline-code: #e6e3d9;
+  --cell-empty: #dbd8ce; --shadow: none;
+
+  --font-display: "Zodiak", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Switzer", "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121210; --surface: #191917; --surface-2: #20201d; --ink: #eceae2; --muted: #a9a69b; --line: #2f2e2a;
+    --accent: var(--book-dark, #ff9c7c); --accent-ink: #14130f;
+    --amber: #e5b455; --tldr-bg: #2a2414; --tldr-line: #c9962e;
+    --indigo: #8fd3c0; --real-bg: #14261f; --real-line: #4fa38f;
+    --code-bg: #0c0c0a; --code-ink: #dedbd0; --inline-code: #2a2a26;
+    --cell-empty: #2f2e2a; --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121210; --surface: #191917; --surface-2: #20201d; --ink: #eceae2; --muted: #a9a69b; --line: #2f2e2a;
+  --accent: var(--book-dark, #ff9c7c); --accent-ink: #14130f;
+  --amber: #e5b455; --tldr-bg: #2a2414; --tldr-line: #c9962e;
+  --indigo: #8fd3c0; --real-bg: #14261f; --real-line: #4fa38f;
+  --code-bg: #0c0c0a; --code-ink: #dedbd0; --inline-code: #2a2a26;
+  --cell-empty: #2f2e2a; --shadow: none;
+}
+
+/* Type */
+body { font-family: var(--font-sans); }
+::selection { background: var(--ink); color: var(--bg); }
+
+.brand b {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -.012em;
+}
+h1.ch-title, .contents h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+h1.ch-title { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.06; margin-bottom: 26px; }
+.contents h1 { font-size: clamp(34px, 4.6vw, 52px); line-height: 1.04; margin-bottom: 10px; }
+.body h3 { font-family: var(--font-display); font-weight: 400; font-size: 25px; line-height: 1.2; letter-spacing: -.014em; margin-top: 36px; }
+.body p, .body li { font-size: 16.5px; line-height: 1.65; }
+.tldr p { font-size: 17.5px; }
+.ch-no { font-family: var(--font-sans); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.part-num { font-family: var(--font-sans); font-variant-numeric: tabular-nums; }
+.pcard h2 { font-family: var(--font-display); font-weight: 400; font-size: 19px; letter-spacing: -.01em; }
+
+/* Edges: squarer and flatter, as on the first page */
+.btn, .search { border-radius: 4px; }
+.btn:hover { border-color: var(--ink); }
+.search:focus { outline: none; border-color: var(--ink); }
+.part-head, .ch-row { border-radius: 4px; }
+.box { border-radius: 2px; border-left-width: 3px; }
+.box h2 { font-size: 13.5px; }
+.body pre, .table-wrap, .diagram, .chart { border-radius: 4px; }
+.body code { border-radius: 3px; }
+.pcard { border-radius: 4px; box-shadow: none; }
+.bank-group { border-radius: 3px; }
+.cell { border-radius: 1px; }
+.complete { border-radius: 4px; border-width: 1px; font-weight: 500; }
+.toast { border-radius: 4px; }
+.tab.active { font-weight: 500; }
+.body th { font-weight: 500; }
