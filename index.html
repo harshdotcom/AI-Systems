@@ -213,14 +213,22 @@
       text-wrap: balance;
     }
     .hero-title em { font-style: italic; letter-spacing: -.035em; }
+    .hero-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 270px);
+      column-gap: var(--gutter);
+      align-items: start;
+    }
     .hero-note {
-      display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px;
-      margin-bottom: clamp(18px, 2.6vw, 30px);
-      font-size: 14.5px; color: var(--ink-muted);
+      display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+      margin-top: .9em;
+      padding-left: 18px;
+      border-left: 1px solid var(--rule);
+      font-size: 14.5px; line-height: 1.5; color: var(--ink-muted);
     }
     .hero-note-tag { font-size: 11.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
-    .hero-note strong { color: var(--ink); font-weight: 600; }
-    .hero-note-go { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); font-weight: 500; border-bottom: 1px solid currentColor; }
+    .hero-note strong { display: block; font-family: var(--font-display); font-size: 1.45rem; font-weight: 400; line-height: 1.1; color: var(--ink); }
+    .hero-note-go { display: inline-flex; align-items: center; gap: 5px; margin-top: 4px; color: var(--ink); font-weight: 500; border-bottom: 1px solid currentColor; }
     .hero-note-go svg { width: 13px; height: 13px; transition: transform .25s var(--ease-out); }
     .hero-note:hover .hero-note-go svg { transform: translate(2px, -2px); }
     .hero-body {
@@ -993,6 +1001,8 @@
     }
 
     @media (max-width: 860px) {
+      .hero-top { grid-template-columns: minmax(0, 1fr); }
+      .hero-note { margin-top: 26px; }
       .hero-body { grid-template-columns: minmax(0, 1fr); row-gap: 34px; }
       .ledger { grid-column: 1; max-width: 420px; }
       .idx-group { grid-template-columns: minmax(0, 1fr); }
@@ -1132,12 +1142,14 @@
 
     <!-- Opening -->
     <section class="hero" aria-labelledby="hero-title">
-      <a class="hero-note rise" href="https://harshdotcom.github.io/Applyfox/" target="_blank" rel="noopener">
-        <span class="hero-note-tag">New</span>
-        <span><strong>Applyfox</strong> · open roles from company job boards on Greenhouse, Lever, Workday and Ashby, in one place.</span>
-        <span class="hero-note-go">Try it live<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
-      </a>
-      <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Eighteen</span> books for people who <em>build systems.</em></h1>
+      <div class="hero-top">
+        <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Eighteen</span> books for people who <em>build systems.</em></h1>
+        <a class="hero-note rise d1" href="https://harshdotcom.github.io/Applyfox/" target="_blank" rel="noopener">
+          <span class="hero-note-tag">New</span>
+          <span><strong>Applyfox</strong>Open roles from Greenhouse, Lever, Workday and Ashby, in one place.</span>
+          <span class="hero-note-go">Try it live<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
 
       <div class="hero-body rise d1">
         <div>
