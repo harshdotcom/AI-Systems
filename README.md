@@ -1,7 +1,7 @@
 # The Central Library
 
-> **Eighteen books for people who build systems.**
-> 18 volumes · 3,100 chapters · free to read, nothing to sign up for.
+> **Nineteen books for people who build systems.**
+> 19 volumes · 3,300 chapters · free to read, nothing to sign up for.
 
 Chapter-by-chapter guides to AI engineering, backends, databases, distributed systems, cloud, security and Python, and to the product, leadership and sales work that surrounds them, and the psychology of the people doing it.
 
@@ -33,21 +33,22 @@ So the chapters stay close to real constraints: KV cache budgets, consensus, que
 | 08 | **Sovereign AI** | Artificial Intelligence | 100 | Compute clusters, data localization, regulatory frameworks, national AI infrastructure |
 | 09 | **AI Product Manager** | Artificial Intelligence | 200 | Problem discovery, synthetic datasets, evals, UX, roadmap execution |
 | 10 | **AI Team Lead** | Artificial Intelligence | 200 | Leading AI engineering teams, planning work, communication, experimentation habits |
-| 11 | **Database Engineering** | Engineering | 200 | Relational modeling, SQL, indexing, transactions, query optimization, replication, distributed databases |
-| 12 | **Backend & API Engineering** | Engineering | 200 | API design, authentication, data access, background jobs, testing, security, observability, deployment |
-| 13 | **Cloud & DevOps Engineering** | Engineering | 200 | Linux, cloud platforms, networking, infrastructure as code, CI/CD, Kubernetes, reliability, FinOps |
-| 14 | **Distributed Systems Engineering** | Engineering | 200 | Consensus, replication, data systems, fault tolerance, operations, case studies |
-| 15 | **Cybersecurity & Application Security** | Engineering | 200 | Cryptography, identity and access, network and web application security, API security, secure development, testing, security operations |
-| 16 | **Python Mastery** | Programming | 200 | Language fundamentals, tooling, data, testing, application design, production practices |
-| 17 | **Sales Mastery** | Business | 200 | Cold outreach, technical demos, executive negotiation, enterprise renewals |
-| 18 | **Human Psychology** | Psychology | 100 | Research methods, brain and biology, perception and attention, learning and memory, decisions, emotion, development, personality, social psychology, mental health |
+| 11 | **AI Automation** | Artificial Intelligence | 200 | n8n, Zapier, Make, LLM building blocks, agent builders, Crawl4AI and Firecrawl scraping, browser automation, MCP, reliability, governance |
+| 12 | **Database Engineering** | Engineering | 200 | Relational modeling, SQL, indexing, transactions, query optimization, replication, distributed databases |
+| 13 | **Backend & API Engineering** | Engineering | 200 | API design, authentication, data access, background jobs, testing, security, observability, deployment |
+| 14 | **Cloud & DevOps Engineering** | Engineering | 200 | Linux, cloud platforms, networking, infrastructure as code, CI/CD, Kubernetes, reliability, FinOps |
+| 15 | **Distributed Systems Engineering** | Engineering | 200 | Consensus, replication, data systems, fault tolerance, operations, case studies |
+| 16 | **Cybersecurity & Application Security** | Engineering | 200 | Cryptography, identity and access, network and web application security, API security, secure development, testing, security operations |
+| 17 | **Python Mastery** | Programming | 200 | Language fundamentals, tooling, data, testing, application design, production practices |
+| 18 | **Sales Mastery** | Business | 200 | Cold outreach, technical demos, executive negotiation, enterprise renewals |
+| 19 | **Human Psychology** | Psychology | 100 | Research methods, brain and biology, perception and attention, learning and memory, decisions, emotion, development, personality, social psychology, mental health |
 
 ---
 
 ## What the site does
 
 - **The shelf.** Every volume sits spine-out on the first page, grouped by subject. Click a spine to open the book; a red ribbon marks the ones you have started.
-- **The catalogue.** A searchable index of all eighteen volumes, filterable by subject or by what you have in progress. Press `/` to search.
+- **The catalogue.** A searchable index of all nineteen volumes, filterable by subject or by what you have in progress. Press `/` to search.
 - **The reader.** Each book opens in a full-screen reader with a chapter stepper, a table of contents, a progress count and a shareable link to the chapter you are on. `←` and `→` move between chapters, `Esc` returns to the library.
 - **Focus dock.** A 25-minute focus timer and ambient sound, available on every page.
 - **Light and dark.** One switch, remembered between visits.
