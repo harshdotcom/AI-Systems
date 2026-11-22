@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f3f2ee">
   <meta name="color-scheme" content="dark light">
-  <meta name="description" content="The Central Library — nineteen practical books on AI engineering, automation, backends, cloud, security, distributed systems, databases, Python, product, leadership, sales and psychology. 3,300 chapters, free to read.">
+  <meta name="description" content="The Central Library — twenty practical books on AI engineering, automation, robotics, backends, cloud, security, distributed systems, databases, Python, product, leadership, sales and psychology. 3,500 chapters, free to read.">
   <meta name="author" content="Harsh Jha, AI Lead at Formee Holdings">
   <meta property="og:title" content="The Central Library">
-  <meta property="og:description" content="Nineteen books for people who build systems. 3,300 chapters, free to read. Curated by Harsh Jha, AI Lead at Formee Holdings, and built by a team of IITians.">
+  <meta property="og:description" content="Twenty books for people who build systems. 3,500 chapters, free to read. Curated by Harsh Jha, AI Lead at Formee Holdings, and built by a team of IITians.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://harshdotcom.github.io/AI-Systems/">
-  <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-image.png?v=4">
+  <meta property="og:image" content="https://harshdotcom.github.io/AI-Systems/og-image.png?v=5">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Nineteen books for people who build systems, above a shelf of nineteen coloured book spines.">
+  <meta property="og:image:alt" content="Twenty books for people who build systems, above a shelf of twenty coloured book spines.">
   <meta name="twitter:card" content="summary_large_image">
   <title>The Central Library</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
@@ -1119,7 +1119,7 @@
         <a class="header-link" href="#library">Catalogue</a>
         <a class="header-link" href="#preface">About</a>
         <a class="header-link" href="#curator">Curator</a>
-        <span class="header-count" id="global-stat-text" title="Your reading, stored only in this browser">0 of 19 opened</span>
+        <span class="header-count" id="global-stat-text" title="Your reading, stored only in this browser">0 of 20 opened</span>
         <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark" title="Light / dark">
           <!-- Sun: shown in the dark theme -->
           <svg id="theme-sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" style="display:none" aria-hidden="true">
@@ -1143,7 +1143,7 @@
     <!-- Opening -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-top">
-        <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Nineteen</span> books for people who <em>build systems.</em></h1>
+        <h1 class="hero-title rise" id="hero-title"><span id="hero-count">Twenty</span> books for people who <em>build systems.</em></h1>
         <a class="hero-note rise d1" href="https://harshdotcom.github.io/Applyfox/" target="_blank" rel="noopener">
           <span class="hero-note-tag">New</span>
           <span><strong>Applyfox</strong>Open roles from Greenhouse, Lever, Workday and Ashby, in one place.</span>
@@ -1166,8 +1166,8 @@
         </div>
 
         <dl class="ledger" aria-label="The collection in numbers">
-          <div><dt>Volumes</dt><dd id="stat-volumes">19</dd></div>
-          <div><dt>Chapters</dt><dd id="stat-chapters">3,300</dd></div>
+          <div><dt>Volumes</dt><dd id="stat-volumes">20</dd></div>
+          <div><dt>Chapters</dt><dd id="stat-chapters">3,500</dd></div>
           <div><dt>Subjects</dt><dd id="stat-subjects">5</dd></div>
           <div><dt>Read by you</dt><dd id="stat-read">0</dd></div>
         </dl>
@@ -1664,6 +1664,16 @@
         description: 'Workflow automation from basics to production: n8n, Zapier and Make, LLM building blocks, agent builders, web scraping with Crawl4AI and Firecrawl, browser automation, MCP, reliability and governance.'
       },
       {
+        id: 'physical-ai', slug: 'physical-ai',
+        title: 'Physical AI', subtitle: 'Robots, embodied AI and autonomous machines',
+        category: 'Artificial Intelligence', chapters: 200, parts: 20,
+        key: 'physical-ai-progress-v1', lastKey: 'physical-ai-last-v1',
+        file: 'Physical AI.html',
+        icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="10" rx="2.5"/><path d="M12 8V4.5"/><circle cx="12" cy="3.5" r="1"/><circle cx="9.5" cy="13" r="1"/><circle cx="14.5" cy="13" r="1"/><path d="M3 12v3M21 12v3M9 18v2.5M15 18v2.5"/></svg>',
+        tone: '#3d3a8c', toneBg: 'rgba(99,102,241,.10)', toneBorder: 'rgba(99,102,241,.28)',
+        description: 'Robots, embodied AI and autonomous machines, from math, hardware and control through perception, SLAM, planning, manipulation and locomotion to robot learning, foundation models, simulation, autonomous vehicles, safety and deployment.'
+      },
+      {
         id: 'sales-mastery',
         slug: 'sales-mastery-200-chapters-html',
         title: 'Sales Mastery',
@@ -2153,6 +2163,7 @@
       'ai-product-manager':              ['#d8a23a', '#1c1810'],
       'ai-team-lead':                    ['#5b6647', '#f1ecd8'],
       'ai-automation':                   ['#a3304b', '#f8e4e0'],
+      'physical-ai':                     ['#3d3a8c', '#e6e3f6'],
       'database-engineering':            ['#7a5230', '#f3e6cc'],
       'backend-api-engineering':         ['#2c5a5e', '#ece6d2'],
       'cloud-devops-engineering':        ['#9db7c6', '#17222a'],
