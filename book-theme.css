@@ -82,3 +82,10 @@ h1.ch-title { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.06; margin-bot
 .toast { border-radius: 4px; }
 .tab.active { font-weight: 500; }
 .body th { font-weight: 500; }
+
+/* Ambient background (book-bg.js draws a fixed canvas at z-index 0) */
+.shell { position: relative; z-index: 1; }
+@media (min-width: 901px) {
+  .side { background: color-mix(in srgb, var(--bg) 72%, transparent); }
+}
+@media print { .ambient-bg { display: none !important; } }
